@@ -15,7 +15,6 @@ public class InfoBrowserServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String userAgent = request.getHeader("User-Agent");
         PrintWriter writer = response.getWriter();
-        String name = "Unknow";
         writer.println(userAgent.toString());
     }
 }
